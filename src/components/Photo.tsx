@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useContextData } from '../context/ContextPhotos';
 import { PhotoType } from '../types/PhotosType';
 

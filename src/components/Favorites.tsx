@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useContextData } from '../context/ContextPhotos';
-import { PhotoType } from '../types/PhotosType';
 import { Photo } from './Photo';
 
 export const Favorites = () => {
