@@ -9,19 +9,22 @@ export const Photos = () => {
 
   return (
     <>
-      {loading && <Spinner />}
       <Search />
       <div className="flex flex-wrap justify-around">
-        {photos.map((item) => {
-          if (item.title.includes(inputValue)) {
-            return (
-              <Photo
-                key={item.id}
-                item={item}
-              />
-            );
-          }
-        })}
+        {loading ? (
+          <Spinner />
+        ) : (
+          photos.map((item) => {
+            if (item.title.includes(inputValue)) {
+              return (
+                <Photo
+                  key={item.id}
+                  item={item}
+                />
+              );
+            }
+          })
+        )}
       </div>
     </>
   );
