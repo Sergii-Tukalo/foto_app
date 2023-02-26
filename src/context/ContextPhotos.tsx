@@ -12,7 +12,7 @@ type ContextProps = {
   photos: PhotoType[];
   inputValue: string;
   likeHandler: (id: number) => void;
-  inputHandler: () => void;
+  inputHandler: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
 export const ContextPhotos = createContext<ContextProps>({} as ContextProps);
